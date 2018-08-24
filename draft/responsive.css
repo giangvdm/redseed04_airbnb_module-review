@@ -16,20 +16,24 @@
 }
 
 /* Tablets (landscape) */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-}
+} */
 
 /* Low-res tablets, mobiles (landscape) */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    /* .col-s-8 {
+    .col-s-8 {
         width: 50%;
-    } */
+        font-size: 13px;
+    }
 }
 
 /*Mobiles (portrait) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .col-xs-16 {
         width: 100%;
+    }
+    .col-xs-16:not(:first-of-type) {
+        margin-top: 20px;
     }
 }

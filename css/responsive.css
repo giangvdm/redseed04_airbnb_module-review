@@ -1,39 +1,47 @@
-/* Desktops */
-@media screen and (min-width: 1281px) {
-
+/* Building grid view */
+/* For mobiles (portrait) */
+[class*="col-"] {
+    width: 100%;
+    /* and for all devices/viewports: all float left */
+    float: left;
+    padding: 12px;
 }
 
-/* Laptops, small desktops */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-
+/* For mobiles (landscape), low-res and portrait tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .col-s-1 {width: 6.25%;}
+    .col-s-2 {width: 12.5%;}
+    .col-s-3 {width: 18.75%;}
+    .col-s-4 {width: 25%;}
+    .col-s-5 {width: 31.25%;}
+    .col-s-6 {width: 37.5%;}
+    .col-s-7 {width: 43.75%;}
+    .col-s-8 {width: 50%;}
+    .col-s-9 {width: 56.25%;}
+    .col-s-10 {width: 62.5%;}
+    .col-s-11 {width: 68.75%;}
+    .col-s-12 {width: 75%;}
+    .col-s-13 {width: 81.25%;}
+    .col-s-14 {width: 87.5%;}
+    .col-s-15 {width: 93.75%;}
+    .col-s-16 {width: 100%;}
 }
-
-/* Tablets (portrait) */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .col-s-8 {
-        width: 50%;
-    }
-}
-
-/* Tablets (landscape) */
-/* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-} */
-
-/* Low-res tablets, mobiles (landscape) */
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    .col-s-8 {
-        width: 50%;
-        font-size: 13px;
-    }
-}
-
-/*Mobiles (portrait) */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    .col-xs-16 {
-        width: 100%;
-    }
-    .col-xs-16:not(:first-of-type) {
-        margin-top: 20px;
-    }
+/* For laptops, small desktops, large desktops and up */
+@media screen and (min-width: 1025px){
+    .col-1 {width: 6.25%;}
+    .col-2 {width: 12.5%;}
+    .col-3 {width: 18.75%;}
+    .col-4 {width: 25%;}
+    .col-5 {width: 31.25%;}
+    .col-6 {width: 37.5%;}
+    .col-7 {width: 43.75%;}
+    .col-8 {width: 50%;}
+    .col-9 {width: 56.25%;}
+    .col-10 {width: 62.5%;}
+    .col-11 {width: 68.75%;}
+    .col-12 {width: 75%;}
+    .col-13 {width: 81.25%;}
+    .col-14 {width: 87.5%;}
+    .col-15 {width: 93.75%;}
+    .col-16 {width: 100%;}
 }
