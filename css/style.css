@@ -1,0 +1,67 @@
+/* ****
+Reset 
+**** */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: auto;
+}
+
+/* ****
+Main styling
+**** */
+/* Component container */
+.section__component {
+    font-size: 14px;
+}
+
+/* Component image */
+.component__image {
+    width: 100%;
+}
+
+/* Review star list */
+.component__review-stars {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 12px auto;
+}
+
+.component__review-stars > li {
+    display: inline;
+}
+
+/* Reivew content */
+.component__review-content {
+    margin: 12px auto;
+}
+
+/* Review Author */
+.author__avatar {
+    display: inline-block;
+    width: 50px;
+    height: auto;
+}
+
+.author__detail {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: top;
+}
+
+[class*="detail__"] {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+.detail__name {
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.detail__country {
+    line-height: 1.2em;
+}
