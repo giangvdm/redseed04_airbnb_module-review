@@ -13,9 +13,30 @@ img {
 /* ****
 Main styling
 **** */
+/* Module container */
+.section {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
 /* Component container */
 .section__component {
     font-size: 14px;
+    padding: 0 15px;
 }
 
 /* Component image */
